@@ -155,7 +155,7 @@ function connectWebSocket() {
 
     ws.on("open", () => {
         console.log("[+] WebSocket đã kết nối thành công.");
-        const authPayload = [1, "MiniGame", "", "", { agentId: "1", accessToken: "1-e5f41fc847e55893e0fdc9d937b6820a", reconnect: false }];
+        const authPayload = [1, "MiniGame", "", "", { agentId: "1", accessToken: "1-08b453afae5d5ba98706b31c2c7460ac", reconnect: false }];
         ws.send(JSON.stringify(authPayload));
         console.log("[>] Đã gửi thông tin xác thực.");
         setTimeout(() => {
